@@ -1,0 +1,529 @@
+ID1	ID2	Name1	Name2	Separation	ATC_Codes1	ATC_Codes2	Reported_Interaction	Reported_Combination
+DB00675	DB06155	Tamoxifen	Rimonabant	1.0833333333333335	L	A	False	False
+DB00608	DB01106	Chloroquine	Levocabastine	1.0416666666666665	P	S, R	True	False
+DB06155	DB06080	Rimonabant	Linifanib	1.0416666666666665	A		False	False
+DB01268	DB06155	Sunitinib	Rimonabant	1.0375	L	A	False	False
+DB09237	DB01106	Levamlodipine	Levocabastine	1.0		S, R	False	False
+DB01239	DB02207	Chlorprothixene	7-Nitroindazole	1.0	N		True	False
+DB06195	DB06153	Seliciclib	Pizotifen	1.0		N	False	False
+DB06195	DB00835	Seliciclib	Brompheniramine	1.0		R	False	False
+DB08895	DB06155	Tofacitinib	Rimonabant	1.0	L	A	False	False
+DB08877	DB06155	Ruxolitinib	Rimonabant	1.0	L	A	False	False
+DB01239	DB07702	Chlorprothixene	17alpha-Estriol	1.0	N		False	False
+DB08877	DB00835	Ruxolitinib	Brompheniramine	1.0	L	R	False	False
+DB08877	DB07702	Ruxolitinib	17alpha-Estriol	1.0	L		False	False
+DB06155	DB07702	Rimonabant	17alpha-Estriol	1.0	A		False	False
+DB00656	DB07702	Trazodone	17alpha-Estriol	1.0	N		False	False
+DB06195	DB00734	Seliciclib	Risperidone	1.0		N	False	False
+DB06155	DB02207	Rimonabant	7-Nitroindazole	1.0	A		True	False
+DB00656	DB02207	Trazodone	7-Nitroindazole	1.0	N		True	False
+DB00420	DB08521	Promazine	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	1.0	N		False	False
+DB00420	DB06195	Promazine	Seliciclib	1.0	N		False	False
+DB01106	DB02207	Levocabastine	7-Nitroindazole	1.0	S, R		False	False
+DB01106	DB07702	Levocabastine	17alpha-Estriol	1.0	S, R		False	False
+DB00715	DB02207	Paroxetine	7-Nitroindazole	1.0	N		True	False
+DB06195	DB04946	Seliciclib	Iloperidone	1.0		N	False	False
+DB08877	DB01106	Ruxolitinib	Levocabastine	1.0	L	S, R	False	False
+DB01106	DB06195	Levocabastine	Seliciclib	1.0	S, R		False	False
+DB02116	DB00835	Olomoucine	Brompheniramine	1.0		R	False	False
+DB00917	DB02207	Dinoprostone	7-Nitroindazole	1.0	G		False	False
+DB08521	DB00835	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Brompheniramine	1.0		R	False	False
+DB00917	DB07702	Dinoprostone	17alpha-Estriol	1.0	G		False	False
+DB08521	DB04946	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Iloperidone	1.0		N	False	False
+DB08521	DB00734	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Risperidone	1.0		N	False	False
+DB02116	DB06155	Olomoucine	Rimonabant	1.0		A	False	False
+DB08521	DB06155	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Rimonabant	1.0		A	False	False
+DB08521	DB01239	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Chlorprothixene	1.0		N	False	False
+DB02116	DB06153	Olomoucine	Pizotifen	1.0		N	False	False
+DB00917	DB06195	Dinoprostone	Seliciclib	1.0	G		False	False
+DB08895	DB00835	Tofacitinib	Brompheniramine	1.0	L	R	False	False
+DB00917	DB02116	Dinoprostone	Olomoucine	1.0	G		False	False
+DB00917	DB08521	Dinoprostone	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	1.0	G		False	False
+DB00917	DB08895	Dinoprostone	Tofacitinib	1.0	G	L	False	False
+DB00917	DB00675	Dinoprostone	Tamoxifen	1.0	G	L	False	False
+DB00917	DB09237	Dinoprostone	Levamlodipine	1.0	G		False	False
+DB08895	DB07702	Tofacitinib	17alpha-Estriol	1.0	L		False	False
+DB06195	DB01239	Seliciclib	Chlorprothixene	1.0		N	False	False
+DB06195	DB06155	Seliciclib	Rimonabant	1.0		A	False	False
+DB00917	DB08877	Dinoprostone	Ruxolitinib	1.0	G	L	False	False
+DB01106	DB06155	Levocabastine	Rimonabant	1.0	S, R	A	True	False
+DB00715	DB07702	Paroxetine	17alpha-Estriol	1.0	N		False	False
+DB01106	DB08521	Levocabastine	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	1.0	S, R		False	False
+DB04946	DB02207	Iloperidone	7-Nitroindazole	1.0	N		True	False
+DB01175	DB02207	Escitalopram	7-Nitroindazole	1.0	N		True	False
+DB01175	DB07702	Escitalopram	17alpha-Estriol	1.0	N		False	False
+DB09237	DB06155	Levamlodipine	Rimonabant	1.0		A	False	False
+DB09237	DB00835	Levamlodipine	Brompheniramine	1.0		R	False	False
+DB01106	DB08895	Levocabastine	Tofacitinib	1.0	S, R	L	False	False
+DB00420	DB02207	Promazine	7-Nitroindazole	1.0	N		True	False
+DB00420	DB07702	Promazine	17alpha-Estriol	1.0	N		False	False
+DB00835	DB02207	Brompheniramine	7-Nitroindazole	1.0	R		True	False
+DB00835	DB07702	Brompheniramine	17alpha-Estriol	1.0	R		False	False
+DB01106	DB02116	Levocabastine	Olomoucine	1.0	S, R		False	False
+DB06153	DB02207	Pizotifen	7-Nitroindazole	1.0	N		True	False
+DB06153	DB07702	Pizotifen	17alpha-Estriol	1.0	N		False	False
+DB08521	DB06153	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Pizotifen	1.0		N	False	False
+DB00734	DB02207	Risperidone	7-Nitroindazole	1.0	N		True	False
+DB04946	DB07702	Iloperidone	17alpha-Estriol	1.0	N		False	False
+DB00734	DB07702	Risperidone	17alpha-Estriol	1.0	N		False	False
+DB01175	DB06080	Escitalopram	Linifanib	0.975490196078431	N		False	False
+DB00715	DB06080	Paroxetine	Linifanib	0.9722222222222219	N		False	False
+DB01151	DB07702	Desipramine	17alpha-Estriol	0.9705882352941178	N		False	False
+DB01151	DB02207	Desipramine	7-Nitroindazole	0.9705882352941178	N		True	False
+DB07702	DB00540	17alpha-Estriol	Nortriptyline	0.9642857142857144		N	False	False
+DB00540	DB02207	Nortriptyline	7-Nitroindazole	0.9642857142857144	N		True	False
+DB01268	DB01106	Sunitinib	Levocabastine	0.9375	L	S, R	True	False
+DB01268	DB07702	Sunitinib	17alpha-Estriol	0.9375	L		False	False
+DB01268	DB00715	Sunitinib	Paroxetine	0.9375	L	N	True	False
+DB01268	DB00656	Sunitinib	Trazodone	0.9375	L	N	True	False
+DB01268	DB00734	Sunitinib	Risperidone	0.9375	L	N	True	False
+DB01268	DB00420	Sunitinib	Promazine	0.9375	L	N	True	False
+DB01268	DB04946	Sunitinib	Iloperidone	0.9375	L	N	True	False
+DB01268	DB01175	Sunitinib	Escitalopram	0.9375	L	N	True	False
+DB00540	DB06080	Nortriptyline	Linifanib	0.9309523809523808	N		False	False
+DB00836	DB01106	Loperamide	Levocabastine	0.9285714285714286	A	S, R	True	False
+DB00836	DB02116	Loperamide	Olomoucine	0.9285714285714286	A		False	False
+DB00608	DB00734	Chloroquine	Risperidone	0.9166666666666665	P	N	True	False
+DB00608	DB04946	Chloroquine	Iloperidone	0.9166666666666665	P	N	True	False
+DB00608	DB00715	Chloroquine	Paroxetine	0.9166666666666665	P	N	True	False
+DB07702	DB06080	17alpha-Estriol	Linifanib	0.9166666666666665			False	False
+DB00656	DB06080	Trazodone	Linifanib	0.9166666666666665	N		False	False
+DB00608	DB01239	Chloroquine	Chlorprothixene	0.9166666666666665	P	N	True	False
+DB00734	DB06080	Risperidone	Linifanib	0.9166666666666665	N		False	False
+DB00608	DB00835	Chloroquine	Brompheniramine	0.9166666666666665	P	R	True	False
+DB04946	DB06080	Iloperidone	Linifanib	0.9166666666666665	N		False	False
+DB00608	DB01175	Chloroquine	Escitalopram	0.9166666666666665	P	N	True	False
+DB00608	DB00420	Chloroquine	Promazine	0.9166666666666665	P	N	True	False
+DB00608	DB00656	Chloroquine	Trazodone	0.9166666666666665	P	N	True	False
+DB01106	DB06080	Levocabastine	Linifanib	0.9166666666666665	S, R		False	False
+DB00608	DB00917	Chloroquine	Dinoprostone	0.9166666666666665	P	G	False	False
+DB00608	DB06153	Chloroquine	Pizotifen	0.9166666666666665	P	N	False	False
+DB00608	DB06155	Chloroquine	Rimonabant	0.9166666666666665	P	A	False	False
+DB00420	DB06080	Promazine	Linifanib	0.9166666666666665	N		False	False
+DB01268	DB00540	Sunitinib	Nortriptyline	0.9017857142857144	L	N	True	False
+DB08877	DB06153	Ruxolitinib	Pizotifen	0.894736842105263	L	N	False	False
+DB09237	DB06153	Levamlodipine	Pizotifen	0.894736842105263		N	True	False
+DB08895	DB06153	Tofacitinib	Pizotifen	0.894736842105263	L	N	False	False
+DB09237	DB01151	Levamlodipine	Desipramine	0.8753501400560224		N	True	False
+DB01782	DB01106	Pyrazolanthrone	Levocabastine	0.875		S, R	False	False
+DB01782	DB00420	Pyrazolanthrone	Promazine	0.875		N	False	False
+DB01782	DB01175	Pyrazolanthrone	Escitalopram	0.875		N	False	False
+DB01782	DB06155	Pyrazolanthrone	Rimonabant	0.875		A	False	False
+DB00420	DB00675	Promazine	Tamoxifen	0.875	N	L	True	False
+DB01782	DB00715	Pyrazolanthrone	Paroxetine	0.875		N	False	False
+DB09237	DB00734	Levamlodipine	Risperidone	0.875		N	True	False
+DB01782	DB00734	Pyrazolanthrone	Risperidone	0.875		N	False	False
+DB01782	DB04946	Pyrazolanthrone	Iloperidone	0.875		N	False	False
+DB01782	DB06153	Pyrazolanthrone	Pizotifen	0.875		N	False	False
+DB08895	DB00734	Tofacitinib	Risperidone	0.875	L	N	False	False
+DB08895	DB00715	Tofacitinib	Paroxetine	0.875	L	N	True	False
+DB08877	DB00715	Ruxolitinib	Paroxetine	0.875	L	N	True	False
+DB08877	DB00734	Ruxolitinib	Risperidone	0.875	L	N	False	False
+DB00675	DB00835	Tamoxifen	Brompheniramine	0.875	L	R	True	False
+DB01782	DB00656	Pyrazolanthrone	Trazodone	0.875		N	False	False
+DB01782	DB02207	Pyrazolanthrone	7-Nitroindazole	0.875			False	False
+DB09237	DB00715	Levamlodipine	Paroxetine	0.875		N	True	False
+DB01782	DB09237	Pyrazolanthrone	Levamlodipine	0.875			False	False
+DB02116	DB00734	Olomoucine	Risperidone	0.875		N	False	False
+DB00917	DB01782	Dinoprostone	Pyrazolanthrone	0.875	G		False	False
+DB08877	DB01239	Ruxolitinib	Chlorprothixene	0.8666666666666667	L	N	False	False
+DB08877	DB04946	Ruxolitinib	Iloperidone	0.8666666666666667	L	N	False	False
+DB08877	DB01175	Ruxolitinib	Escitalopram	0.8666666666666667	L	N	False	False
+DB01175	DB09237	Escitalopram	Levamlodipine	0.8666666666666667	N		False	False
+DB08895	DB04946	Tofacitinib	Iloperidone	0.8666666666666667	L	N	False	False
+DB08895	DB01239	Tofacitinib	Chlorprothixene	0.8666666666666667	L	N	False	False
+DB01175	DB08895	Escitalopram	Tofacitinib	0.8666666666666667	N	L	False	False
+DB09237	DB04946	Levamlodipine	Iloperidone	0.8666666666666667		N	True	False
+DB02116	DB01239	Olomoucine	Chlorprothixene	0.8666666666666667		N	False	False
+DB09237	DB01239	Levamlodipine	Chlorprothixene	0.8666666666666667		N	False	False
+DB01268	DB00836	Sunitinib	Loperamide	0.8660714285714286	L	A	True	False
+DB06195	DB00477	Seliciclib	Chlorpromazine	0.8571428571428572		N	False	False
+DB00675	DB01239	Tamoxifen	Chlorprothixene	0.8571428571428572	L	N	True	False
+DB09237	DB00540	Levamlodipine	Nortriptyline	0.8531746031746033		N	True	False
+DB08895	DB00540	Tofacitinib	Nortriptyline	0.8531746031746033	L	N	False	False
+DB08877	DB00540	Ruxolitinib	Nortriptyline	0.8531746031746033	L	N	False	False
+DB01268	DB06153	Sunitinib	Pizotifen	0.8505434782608696	L	N	False	False
+DB06195	DB01151	Seliciclib	Desipramine	0.8455882352941178		N	False	False
+DB00836	DB06080	Loperamide	Linifanib	0.8452380952380953	A		False	False
+DB01151	DB06080	Desipramine	Linifanib	0.8437766410912191	N		False	False
+DB06195	DB00715	Seliciclib	Paroxetine	0.8421052631578947		N	False	False
+DB00477	DB07702	Chlorpromazine	17alpha-Estriol	0.8416149068322982	N		False	False
+DB08521	DB00477	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Chlorpromazine	0.8416149068322982		N	False	False
+DB01782	DB00540	Pyrazolanthrone	Nortriptyline	0.8392857142857144		N	False	False
+DB06678	DB02207	Esmirtazapine	7-Nitroindazole	0.8333333333333335			True	False
+DB01041	DB01239	Thalidomide	Chlorprothixene	0.8333333333333335	L	N	True	False
+DB01041	DB00835	Thalidomide	Brompheniramine	0.8333333333333335	L	R	True	False
+DB01041	DB06153	Thalidomide	Pizotifen	0.8333333333333335	L	N	True	False
+DB01041	DB04946	Thalidomide	Iloperidone	0.8333333333333335	L	N	True	False
+DB01041	DB00734	Thalidomide	Risperidone	0.8333333333333335	L	N	True	False
+DB01041	DB00715	Thalidomide	Paroxetine	0.8333333333333335	L	N	True	False
+DB00656	DB01041	Trazodone	Thalidomide	0.8333333333333335	N	L	True	False
+DB00420	DB01041	Promazine	Thalidomide	0.8333333333333335	N	L	True	False
+DB01106	DB01041	Levocabastine	Thalidomide	0.8333333333333335	S, R	L	True	False
+DB01175	DB01041	Escitalopram	Thalidomide	0.8333333333333335	N	L	True	False
+DB06678	DB07702	Esmirtazapine	17alpha-Estriol	0.8333333333333335			False	False
+DB01041	DB06155	Thalidomide	Rimonabant	0.8333333333333335	L	A	True	False
+DB08521	DB06678	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Esmirtazapine	0.8333333333333335			False	False
+DB02116	DB06678	Olomoucine	Esmirtazapine	0.8333333333333335			False	False
+DB06195	DB06678	Seliciclib	Esmirtazapine	0.8333333333333335			False	False
+DB01175	DB06195	Escitalopram	Seliciclib	0.8333333333333333	N		False	False
+DB01106	DB00675	Levocabastine	Tamoxifen	0.8333333333333333	S, R	L	True	False
+DB01268	DB01239	Sunitinib	Chlorprothixene	0.832236842105263	L	N	True	False
+DB00675	DB01151	Tamoxifen	Desipramine	0.8224400871459696	L	N	True	False
+DB06153	DB06080	Pizotifen	Linifanib	0.8214285714285712	N		False	False
+DB00656	DB08895	Trazodone	Tofacitinib	0.8181818181818181	N	L	False	False
+DB08877	DB00656	Ruxolitinib	Trazodone	0.8181818181818181	L	N	False	False
+DB00656	DB09237	Trazodone	Levamlodipine	0.8181818181818181	N		True	False
+DB00656	DB02116	Trazodone	Olomoucine	0.8181818181818181	N		False	False
+DB00675	DB04946	Tamoxifen	Iloperidone	0.8095238095238095	L	N	True	False
+DB02116	DB00477	Olomoucine	Chlorpromazine	0.8085714285714285		N	False	False
+DB01782	DB00477	Pyrazolanthrone	Chlorpromazine	0.8035714285714286		N	False	False
+DB00836	DB01782	Loperamide	Pyrazolanthrone	0.8035714285714286	A		False	False
+DB00608	DB01151	Chloroquine	Desipramine	0.8002983802216539	P	N	True	False
+DB00420	DB02116	Promazine	Olomoucine	0.8	N		False	False
+DB00420	DB08895	Promazine	Tofacitinib	0.8	N	L	False	False
+DB02116	DB04946	Olomoucine	Iloperidone	0.8		N	False	False
+DB00420	DB09237	Promazine	Levamlodipine	0.8	N		True	False
+DB08877	DB00420	Ruxolitinib	Promazine	0.8	L	N	True	False
+DB01239	DB06080	Chlorprothixene	Linifanib	0.7990196078431371	N		False	False
+DB00477	DB02207	Chlorpromazine	7-Nitroindazole	0.798136645962733	N		True	False
+DB01041	DB00540	Thalidomide	Nortriptyline	0.7976190476190477	L	N	True	False
+DB01268	DB00835	Sunitinib	Brompheniramine	0.7946428571428572	L	R	True	False
+DB00656	DB06195	Trazodone	Seliciclib	0.7857142857142858	N		False	False
+DB08521	DB00715	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Paroxetine	0.7857142857142858		N	False	False
+DB00836	DB06195	Loperamide	Seliciclib	0.7857142857142858	A		False	False
+DB01268	DB00917	Sunitinib	Dinoprostone	0.7836538461538463	L	G	False	False
+DB00608	DB00540	Chloroquine	Nortriptyline	0.7809523809523808	P	N	True	False
+DB02116	DB01151	Olomoucine	Desipramine	0.7801120448179273		N	False	False
+DB08521	DB00540	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Nortriptyline	0.7767857142857144		N	False	False
+DB00675	DB00715	Tamoxifen	Paroxetine	0.7727272727272727	L	N	True	False
+DB00477	DB06080	Chlorpromazine	Linifanib	0.7711640211640212	N		False	False
+DB01268	DB06678	Sunitinib	Esmirtazapine	0.7708333333333335	L		True	False
+DB01268	DB00675	Sunitinib	Tamoxifen	0.7708333333333333	L	L	True	False
+DB01175	DB08521	Escitalopram	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	0.7692307692307692	N		False	False
+DB00656	DB00675	Trazodone	Tamoxifen	0.7647058823529411	N	L	True	False
+DB06195	DB06080	Seliciclib	Linifanib	0.7628205128205128			False	False
+DB01175	DB00675	Escitalopram	Tamoxifen	0.7619047619047619	N	L	True	False
+DB08521	DB01151	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Desipramine	0.7600619195046441		N	False	False
+DB00675	DB06153	Tamoxifen	Pizotifen	0.76	L	N	False	False
+DB00675	DB00540	Tamoxifen	Nortriptyline	0.7559523809523812	L	N	True	False
+DB01782	DB01151	Pyrazolanthrone	Desipramine	0.7503501400560224		N	False	False
+DB06678	DB06080	Esmirtazapine	Linifanib	0.75			False	False
+DB02116	DB00715	Olomoucine	Paroxetine	0.75		N	False	False
+DB00608	DB06678	Chloroquine	Esmirtazapine	0.75	P		True	False
+DB00835	DB06080	Brompheniramine	Linifanib	0.7499999999999998	R		False	False
+DB01268	DB01151	Sunitinib	Desipramine	0.7480882352941178	L	N	True	False
+DB00836	DB08877	Loperamide	Ruxolitinib	0.7467532467532467	A	L	True	False
+DB00836	DB08895	Loperamide	Tofacitinib	0.7467532467532467	A	L	True	False
+DB01782	DB01239	Pyrazolanthrone	Chlorprothixene	0.7416666666666667		N	False	False
+DB00917	DB06080	Dinoprostone	Linifanib	0.7348484848484846	G		False	False
+DB01175	DB02116	Escitalopram	Olomoucine	0.7333333333333334	N		False	False
+DB08895	DB01151	Tofacitinib	Desipramine	0.7324929971988796	L	N	True	False
+DB08877	DB01151	Ruxolitinib	Desipramine	0.7324929971988796	L	N	True	False
+DB00675	DB06080	Tamoxifen	Linifanib	0.7291666666666665	L		False	False
+DB01268	DB00477	Sunitinib	Chlorpromazine	0.7281403940886699	L	N	True	False
+DB00675	DB00734	Tamoxifen	Risperidone	0.7272727272727273	L	N	True	False
+DB01041	DB01151	Thalidomide	Desipramine	0.7169650468883206	L	N	True	False
+DB01782	DB06678	Pyrazolanthrone	Esmirtazapine	0.7083333333333335			False	False
+DB00836	DB08521	Loperamide	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	0.7063492063492063	A		False	False
+DB00836	DB07702	Loperamide	17alpha-Estriol	0.7063492063492063	A		False	False
+DB00608	DB00477	Chloroquine	Chlorpromazine	0.6970899470899472	P	N	True	False
+DB08895	DB00477	Tofacitinib	Chlorpromazine	0.6885714285714286	L	N	False	False
+DB08877	DB00477	Ruxolitinib	Chlorpromazine	0.6885714285714286	L	N	True	False
+DB01268	DB02116	Sunitinib	Olomoucine	0.6875	L		False	False
+DB06195	DB00540	Seliciclib	Nortriptyline	0.6785714285714286		N	False	False
+DB01782	DB00835	Pyrazolanthrone	Brompheniramine	0.675		R	False	False
+DB01268	DB06195	Sunitinib	Seliciclib	0.6708333333333334	L		False	False
+DB02116	DB07702	Olomoucine	17alpha-Estriol	0.6666666666666667			False	False
+DB00656	DB08521	Trazodone	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	0.6666666666666667	N		False	False
+DB09237	DB08521	Levamlodipine	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	0.6666666666666667			False	False
+DB01041	DB06678	Thalidomide	Esmirtazapine	0.6666666666666667	L		True	False
+DB00420	DB01229	Promazine	Paclitaxel	0.6666666666666665	N	L	True	False
+DB00608	DB07702	Chloroquine	17alpha-Estriol	0.6666666666666665	P		False	False
+DB00656	DB01229	Trazodone	Paclitaxel	0.6666666666666665	N	L	True	False
+DB01106	DB01229	Levocabastine	Paclitaxel	0.6666666666666665	S, R	L	False	False
+DB00917	DB01229	Dinoprostone	Paclitaxel	0.6666666666666665	G	L	False	False
+DB01229	DB06155	Paclitaxel	Rimonabant	0.6666666666666665	L	A	False	False
+DB01229	DB07702	Paclitaxel	17alpha-Estriol	0.6666666666666665	L		False	False
+DB00608	DB06080	Chloroquine	Linifanib	0.6666666666666665	P		False	False
+DB01229	DB00835	Paclitaxel	Brompheniramine	0.6666666666666665	L	R	False	False
+DB01229	DB06153	Paclitaxel	Pizotifen	0.6666666666666665	L	N	False	False
+DB01229	DB00715	Paclitaxel	Paroxetine	0.6666666666666665	L	N	False	False
+DB01229	DB01239	Paclitaxel	Chlorprothixene	0.6666666666666665	L	N	True	False
+DB09237	DB00477	Levamlodipine	Chlorpromazine	0.6485714285714286		N	True	False
+DB01268	DB01782	Sunitinib	Pyrazolanthrone	0.6458333333333333	L		False	False
+DB01268	DB00608	Sunitinib	Chloroquine	0.6398809523809523	L	P	True	False
+DB01268	DB08521	Sunitinib	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	0.6375	L		False	False
+DB01229	DB01151	Paclitaxel	Desipramine	0.6372549019607843	L	N	True	False
+DB09237	DB06195	Levamlodipine	Seliciclib	0.6363636363636365			False	False
+DB01229	DB00540	Paclitaxel	Nortriptyline	0.6309523809523809	L	N	True	False
+DB08877	DB09237	Ruxolitinib	Levamlodipine	0.625	L		False	False
+DB09237	DB08895	Levamlodipine	Tofacitinib	0.625		L	False	False
+DB09237	DB02116	Levamlodipine	Olomoucine	0.625			False	False
+DB02116	DB06080	Olomoucine	Linifanib	0.6166666666666665			False	False
+DB00608	DB09237	Chloroquine	Levamlodipine	0.6166666666666665	P		True	False
+DB00608	DB00836	Chloroquine	Loperamide	0.6144688644688645	P	A	True	False
+DB00836	DB01041	Loperamide	Thalidomide	0.6080586080586081	A	L	False	False
+DB01268	DB09237	Sunitinib	Levamlodipine	0.6041666666666667	L		True	False
+DB01268	DB01229	Sunitinib	Paclitaxel	0.6041666666666665	L	L	True	False
+DB00675	DB06678	Tamoxifen	Esmirtazapine	0.6025641025641026	L		True	False
+DB00608	DB01782	Chloroquine	Pyrazolanthrone	0.5916666666666666	P		False	False
+DB01782	DB06080	Pyrazolanthrone	Linifanib	0.5916666666666666			False	False
+DB06155	DB00540	Rimonabant	Nortriptyline	0.5892857142857144	A	N	True	False
+DB01041	DB07702	Thalidomide	17alpha-Estriol	0.5833333333333335	L		False	False
+DB01229	DB06080	Paclitaxel	Linifanib	0.5833333333333333	L		False	False
+DB06155	DB00477	Rimonabant	Chlorpromazine	0.5807453416149069	A	N	True	False
+DB02116	DB00540	Olomoucine	Nortriptyline	0.5753968253968256		N	False	False
+DB00917	DB01106	Dinoprostone	Levocabastine	0.5714285714285714	G	S, R	False	False
+DB06155	DB00715	Rimonabant	Paroxetine	0.5714285714285714	A	N	True	False
+DB01268	DB01041	Sunitinib	Thalidomide	0.5565476190476193	L	L	True	False
+DB06195	DB07702	Seliciclib	17alpha-Estriol	0.5555555555555556			False	False
+DB06195	DB02207	Seliciclib	7-Nitroindazole	0.5555555555555556			False	False
+DB01229	DB00734	Paclitaxel	Risperidone	0.5555555555555554	L	N	True	False
+DB01229	DB04946	Paclitaxel	Iloperidone	0.5490196078431371	L	N	True	False
+DB01175	DB01229	Escitalopram	Paclitaxel	0.5490196078431371	N	L	False	False
+DB08895	DB06678	Tofacitinib	Esmirtazapine	0.5476190476190477	L		False	False
+DB08877	DB06678	Ruxolitinib	Esmirtazapine	0.5476190476190477	L		False	False
+DB09237	DB06678	Levamlodipine	Esmirtazapine	0.5476190476190477			True	False
+DB08521	DB06080	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Linifanib	0.5416666666666665			False	False
+DB00608	DB02207	Chloroquine	7-Nitroindazole	0.5416666666666665	P		True	False
+DB00608	DB06698	Chloroquine	Betahistine	0.5416666666666665	P	N	False	False
+DB01175	DB06155	Escitalopram	Rimonabant	0.5384615384615385	N	A	True	False
+DB01268	DB02207	Sunitinib	7-Nitroindazole	0.5375000000000001	L		False	False
+DB09237	DB06080	Levamlodipine	Linifanib	0.5166666666666666			False	False
+DB00608	DB08895	Chloroquine	Tofacitinib	0.5166666666666666	P	L	False	False
+DB00608	DB08877	Chloroquine	Ruxolitinib	0.5166666666666666	P	L	True	False
+DB00675	DB00477	Tamoxifen	Chlorpromazine	0.5092165898617511	L	N	True	False
+DB08895	DB02207	Tofacitinib	7-Nitroindazole	0.5	L		False	False
+DB01782	DB08895	Pyrazolanthrone	Tofacitinib	0.5		L	False	False
+DB08521	DB02207	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	7-Nitroindazole	0.5			False	False
+DB08521	DB06698	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Betahistine	0.5		N	False	False
+DB00675	DB08895	Tamoxifen	Tofacitinib	0.5	L	L	True	False
+DB06155	DB00835	Rimonabant	Brompheniramine	0.5	A	R	True	False
+DB01782	DB08877	Pyrazolanthrone	Ruxolitinib	0.5		L	False	False
+DB00420	DB06155	Promazine	Rimonabant	0.5	N	A	True	False
+DB08877	DB00675	Ruxolitinib	Tamoxifen	0.5	L	L	True	False
+DB08895	DB06698	Tofacitinib	Betahistine	0.5	L	N	False	False
+DB02116	DB06698	Olomoucine	Betahistine	0.5		N	False	False
+DB01229	DB06678	Paclitaxel	Esmirtazapine	0.5	L		False	False
+DB06698	DB02207	Betahistine	7-Nitroindazole	0.5	N		False	False
+DB06698	DB07702	Betahistine	17alpha-Estriol	0.5	N		False	False
+DB02116	DB02207	Olomoucine	7-Nitroindazole	0.5			False	False
+DB09237	DB06698	Levamlodipine	Betahistine	0.5		N	False	False
+DB06195	DB06698	Seliciclib	Betahistine	0.5		N	False	False
+DB01041	DB06080	Thalidomide	Linifanib	0.5	L		False	False
+DB00675	DB02207	Tamoxifen	7-Nitroindazole	0.5	L		False	False
+DB07702	DB02207	17alpha-Estriol	7-Nitroindazole	0.5			False	False
+DB08877	DB06698	Ruxolitinib	Betahistine	0.5	L	N	False	False
+DB08877	DB02207	Ruxolitinib	7-Nitroindazole	0.5	L		False	False
+DB09237	DB07702	Levamlodipine	17alpha-Estriol	0.5			False	False
+DB06155	DB01151	Rimonabant	Desipramine	0.49690402476780204	A	N	True	False
+DB00608	DB00675	Chloroquine	Tamoxifen	0.4791666666666665	P	L	True	False
+DB06155	DB06153	Rimonabant	Pizotifen	0.47058823529411775	A	N	True	False
+DB09237	DB01229	Levamlodipine	Paclitaxel	0.46666666666666656		L	True	False
+DB01041	DB00477	Thalidomide	Chlorpromazine	0.4656084656084656	L	N	True	False
+DB01106	DB04946	Levocabastine	Iloperidone	0.46153846153846145	S, R	N	True	False
+DB00608	DB06195	Chloroquine	Seliciclib	0.45512820512820507	P		False	False
+DB01106	DB00477	Levocabastine	Chlorpromazine	0.4503105590062113	S, R	N	True	False
+DB01229	DB00477	Paclitaxel	Chlorpromazine	0.4470899470899472	L	N	True	False
+DB00656	DB06155	Trazodone	Rimonabant	0.4444444444444444	N	A	True	False
+DB01268	DB06698	Sunitinib	Betahistine	0.4375	L	N	False	False
+DB00917	DB06155	Dinoprostone	Rimonabant	0.4285714285714286	G	A	False	False
+DB00836	DB01175	Loperamide	Escitalopram	0.4285714285714286	A	N	True	False
+DB06155	DB00734	Rimonabant	Risperidone	0.4285714285714286	A	N	True	False
+DB09237	DB00675	Levamlodipine	Tamoxifen	0.4285714285714286		L	True	False
+DB00675	DB08521	Tamoxifen	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	0.41666666666666674	L		False	False
+DB02207	DB06080	7-Nitroindazole	Linifanib	0.4166666666666665			False	False
+DB06698	DB06080	Betahistine	Linifanib	0.4166666666666665	N		False	False
+DB08895	DB06080	Tofacitinib	Linifanib	0.4166666666666665	L		False	False
+DB01229	DB02207	Paclitaxel	7-Nitroindazole	0.4166666666666665	L		False	False
+DB00608	DB08521	Chloroquine	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	0.4166666666666665	P		False	False
+DB08877	DB06080	Ruxolitinib	Linifanib	0.4166666666666665	L		False	False
+DB00836	DB00540	Loperamide	Nortriptyline	0.4166666666666665	A	N	True	False
+DB00608	DB02116	Chloroquine	Olomoucine	0.4166666666666665	P		False	False
+DB00608	DB01229	Chloroquine	Paclitaxel	0.4166666666666665	P	L	True	False
+DB00836	DB00715	Loperamide	Paroxetine	0.4022556390977443	A	N	True	False
+DB01106	DB01151	Levocabastine	Desipramine	0.3916408668730651	S, R	N	True	False
+DB00836	DB00420	Loperamide	Promazine	0.39010989010989006	A	N	True	False
+DB01239	DB06155	Chlorprothixene	Rimonabant	0.3846153846153846	N	A	True	False
+DB06155	DB04946	Rimonabant	Iloperidone	0.3846153846153846	A	N	True	False
+DB00917	DB01041	Dinoprostone	Thalidomide	0.3787878787878789	G	L	False	False
+DB01782	DB06698	Pyrazolanthrone	Betahistine	0.375		N	False	False
+DB00836	DB02207	Loperamide	7-Nitroindazole	0.373015873015873	A		False	False
+DB01106	DB00715	Levocabastine	Paroxetine	0.3571428571428572	S, R	N	True	False
+DB00836	DB00656	Loperamide	Trazodone	0.3571428571428572	A	N	True	False
+DB01106	DB00734	Levocabastine	Risperidone	0.3571428571428572	S, R	N	True	False
+DB00836	DB00675	Loperamide	Tamoxifen	0.34033613445378164	A	L	True	False
+DB00836	DB06153	Loperamide	Pizotifen	0.3376623376623378	A	N	True	False
+DB09237	DB01041	Levamlodipine	Thalidomide	0.3333333333333335		L	True	False
+DB01041	DB06698	Thalidomide	Betahistine	0.3333333333333335	L	N	False	False
+DB01041	DB02116	Thalidomide	Olomoucine	0.3333333333333335	L		False	False
+DB00675	DB07702	Tamoxifen	17alpha-Estriol	0.33333333333333326	L		False	False
+DB00675	DB06698	Tamoxifen	Betahistine	0.33333333333333326	L	N	False	False
+DB01782	DB06195	Pyrazolanthrone	Seliciclib	0.3295454545454546			False	False
+DB00836	DB01151	Loperamide	Desipramine	0.3158263305322129	A	N	True	False
+DB00836	DB00835	Loperamide	Brompheniramine	0.3131868131868132	A	R	True	False
+DB00917	DB01175	Dinoprostone	Escitalopram	0.3125	G	N	False	False
+DB01106	DB01239	Levocabastine	Chlorprothixene	0.3076923076923077	S, R	N	True	False
+DB01175	DB01106	Escitalopram	Levocabastine	0.3076923076923077	N	S, R	True	False
+DB01041	DB06195	Thalidomide	Seliciclib	0.29487179487179493	L		False	False
+DB00836	DB01229	Loperamide	Paclitaxel	0.28754578754578763	A	L	True	False
+DB00675	DB02116	Tamoxifen	Olomoucine	0.2857142857142858	L		False	False
+DB01106	DB00540	Levocabastine	Nortriptyline	0.2767857142857144	S, R	N	True	False
+DB08877	DB06195	Ruxolitinib	Seliciclib	0.2727272727272727	L		False	False
+DB08895	DB06195	Tofacitinib	Seliciclib	0.2727272727272727	L		False	False
+DB00675	DB01041	Tamoxifen	Thalidomide	0.2708333333333335	L	L	True	False
+DB01268	DB08895	Sunitinib	Tofacitinib	0.27083333333333326	L	L	True	False
+DB01268	DB08877	Sunitinib	Ruxolitinib	0.27083333333333326	L	L	True	False
+DB01229	DB08895	Paclitaxel	Tofacitinib	0.2666666666666666	L	L	True	False
+DB08877	DB01229	Ruxolitinib	Paclitaxel	0.2666666666666666	L	L	True	False
+DB00836	DB01239	Loperamide	Chlorprothixene	0.26190476190476186	A	N	True	False
+DB00836	DB06155	Loperamide	Rimonabant	0.26190476190476186	A	A	True	False
+DB00836	DB00917	Loperamide	Dinoprostone	0.26190476190476186	A	G	False	False
+DB00836	DB06678	Loperamide	Esmirtazapine	0.26190476190476186	A		True	False
+DB08521	DB07702	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	17alpha-Estriol	0.25			False	False
+DB08895	DB02116	Tofacitinib	Olomoucine	0.25	L		False	False
+DB00917	DB00656	Dinoprostone	Trazodone	0.25	G	N	False	False
+DB08877	DB02116	Ruxolitinib	Olomoucine	0.25	L		False	False
+DB00836	DB00734	Loperamide	Risperidone	0.24436090225563922	A	N	True	False
+DB00675	DB06195	Tamoxifen	Seliciclib	0.23529411764705888	L		False	False
+DB01106	DB06153	Levocabastine	Pizotifen	0.23529411764705888	S, R	N	True	False
+DB01041	DB08895	Thalidomide	Tofacitinib	0.2333333333333334	L	L	True	False
+DB08877	DB01041	Ruxolitinib	Thalidomide	0.2333333333333334	L	L	True	False
+DB08521	DB06195	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Seliciclib	0.22222222222222232			False	False
+DB01041	DB02207	Thalidomide	7-Nitroindazole	0.20833333333333348	L		True	False
+DB01782	DB01041	Pyrazolanthrone	Thalidomide	0.20833333333333348		L	False	False
+DB01782	DB07702	Pyrazolanthrone	17alpha-Estriol	0.20833333333333326			False	False
+DB00836	DB04946	Loperamide	Iloperidone	0.20634920634920628	A	N	True	False
+DB00836	DB09237	Loperamide	Levamlodipine	0.2012987012987013	A		True	False
+DB00917	DB00835	Dinoprostone	Brompheniramine	0.18181818181818188	G	R	False	False
+DB00917	DB00420	Dinoprostone	Promazine	0.18181818181818188	G	N	False	False
+DB01229	DB01041	Paclitaxel	Thalidomide	0.16666666666666674	L	L	True	False
+DB01229	DB08521	Paclitaxel	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	0.16666666666666652	L		False	False
+DB01229	DB06698	Paclitaxel	Betahistine	0.16666666666666652	L	N	False	False
+DB01782	DB00675	Pyrazolanthrone	Tamoxifen	0.1607142857142858		L	False	False
+DB00917	DB00540	Dinoprostone	Nortriptyline	0.12218045112781972	G	N	False	False
+DB00917	DB00715	Dinoprostone	Paroxetine	0.11764705882352944	G	N	False	False
+DB00656	DB01106	Trazodone	Levocabastine	0.11111111111111116	N	S, R	True	False
+DB00836	DB00477	Loperamide	Chlorpromazine	0.1071428571428572	A	N	True	False
+DB00917	DB01151	Dinoprostone	Desipramine	0.10695187165775422	G	N	False	False
+DB00917	DB06153	Dinoprostone	Pizotifen	0.10000000000000009	G	N	False	False
+DB00917	DB06678	Dinoprostone	Esmirtazapine	0.08333333333333348	G		False	False
+DB01041	DB08521	Thalidomide	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	0.08333333333333348	L		False	False
+DB00608	DB01041	Chloroquine	Thalidomide	0.08333333333333326	P	L	True	False
+DB00917	DB00477	Dinoprostone	Chlorpromazine	0.08241758241758235	G	N	False	False
+DB04946	DB00835	Iloperidone	Brompheniramine	0.05882352941176472	N	R	True	False
+DB01782	DB08521	Pyrazolanthrone	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	0.04166666666666674			False	False
+DB01782	DB01229	Pyrazolanthrone	Paclitaxel	0.04166666666666652		L	False	False
+DB06678	DB06155	Esmirtazapine	Rimonabant	0.03333333333333344		A	True	False
+DB00734	DB00835	Risperidone	Brompheniramine	0.0	N	R	True	False
+DB01106	DB00835	Levocabastine	Brompheniramine	0.0	S, R	R	True	False
+DB08895	DB08521	Tofacitinib	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	0.0	L		False	False
+DB00917	DB01239	Dinoprostone	Chlorprothixene	0.0	G	N	False	False
+DB08877	DB08521	Ruxolitinib	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	0.0	L		False	False
+DB01782	DB02116	Pyrazolanthrone	Olomoucine	0.0			False	False
+DB08521	DB02116	4-[4-(4-Fluorophenyl)-2-[4-[(R)-methylsulfinyl]phenyl]-1H-imidazol-5-yl]pyridine	Olomoucine	0.0			False	False
+DB00715	DB00835	Paroxetine	Brompheniramine	0.0	N	R	True	False
+DB00917	DB00734	Dinoprostone	Risperidone	0.0	G	N	False	False
+DB00917	DB04946	Dinoprostone	Iloperidone	0.0	G	N	False	False
+DB01229	DB06195	Paclitaxel	Seliciclib	-0.025641025641025772	L		False	False
+DB00477	DB00835	Chlorpromazine	Brompheniramine	-0.03439153439153442	N	R	True	False
+DB00835	DB00540	Brompheniramine	Nortriptyline	-0.03571428571428559	R	N	True	False
+DB01175	DB00835	Escitalopram	Brompheniramine	-0.05882352941176472	N	R	True	False
+DB00656	DB00835	Trazodone	Brompheniramine	-0.07692307692307687	N	R	True	False
+DB01229	DB00675	Paclitaxel	Tamoxifen	-0.08333333333333348	L	L	True	False
+DB00420	DB01106	Promazine	Levocabastine	-0.125	N	S, R	True	False
+DB00836	DB06698	Loperamide	Betahistine	-0.12698412698412698	A	N	False	False
+DB01229	DB02116	Paclitaxel	Olomoucine	-0.13333333333333353	L		False	False
+DB06678	DB00477	Esmirtazapine	Chlorpromazine	-0.15476190476190488		N	True	False
+DB00917	DB06698	Dinoprostone	Betahistine	-0.2142857142857142	G	N	False	False
+DB06678	DB04946	Esmirtazapine	Iloperidone	-0.23809523809523792		N	True	False
+DB06155	DB06698	Rimonabant	Betahistine	-0.25	A	N	False	False
+DB00420	DB00477	Promazine	Chlorpromazine	-0.2566137566137566	N	N	True	False
+DB04946	DB06153	Iloperidone	Pizotifen	-0.2692307692307693	N	N	True	False
+DB00420	DB04946	Promazine	Iloperidone	-0.2941176470588235	N	N	True	False
+DB06678	DB00734	Esmirtazapine	Risperidone	-0.2999999999999998		N	True	False
+DB09237	DB02207	Levamlodipine	7-Nitroindazole	-0.33333333333333337			False	False
+DB00656	DB01239	Trazodone	Chlorprothixene	-0.33333333333333337	N	N	True	False
+DB00420	DB00835	Promazine	Brompheniramine	-0.33333333333333337	N	R	True	False
+DB06678	DB01151	Esmirtazapine	Desipramine	-0.346078431372549		N	True	False
+DB04946	DB01151	Iloperidone	Desipramine	-0.35084033613445365	N	N	True	False
+DB00477	DB06698	Chlorpromazine	Betahistine	-0.35403726708074523	N	N	True	False
+DB00656	DB00477	Trazodone	Chlorpromazine	-0.3571428571428571	N	N	True	False
+DB01106	DB06678	Levocabastine	Esmirtazapine	-0.3666666666666665	S, R		False	False
+DB06698	DB01151	Betahistine	Desipramine	-0.37151702786377694	N	N	True	False
+DB00477	DB06153	Chlorpromazine	Pizotifen	-0.376984126984127	N	N	True	False
+DB00835	DB01151	Brompheniramine	Desipramine	-0.377237851662404	R	N	True	False
+DB06678	DB01239	Esmirtazapine	Chlorprothixene	-0.3809523809523808		N	True	False
+DB06153	DB00835	Pizotifen	Brompheniramine	-0.38095238095238093	N	R	True	False
+DB06678	DB00835	Esmirtazapine	Brompheniramine	-0.38888888888888873		R	True	False
+DB00656	DB04946	Trazodone	Iloperidone	-0.38888888888888884	N	N	True	False
+DB04946	DB00540	Iloperidone	Nortriptyline	-0.3957142857142856	N	N	True	False
+DB01239	DB00540	Chlorprothixene	Nortriptyline	-0.3957142857142856	N	N	True	False
+DB00734	DB01151	Risperidone	Desipramine	-0.40872210953346844	N	N	True	False
+DB01175	DB04946	Escitalopram	Iloperidone	-0.40909090909090906	N	N	True	False
+DB06698	DB00540	Betahistine	Nortriptyline	-0.4107142857142856	N	N	True	False
+DB00420	DB01239	Promazine	Chlorprothixene	-0.4117647058823529	N	N	True	False
+DB01175	DB06698	Escitalopram	Betahistine	-0.42307692307692313	N	N	False	False
+DB01239	DB06153	Chlorprothixene	Pizotifen	-0.42307692307692313	N	N	True	False
+DB00715	DB06698	Paroxetine	Betahistine	-0.4285714285714286	N	N	False	False
+DB06678	DB00715	Esmirtazapine	Paroxetine	-0.43333333333333324		N	True	False
+DB01239	DB00734	Chlorprothixene	Risperidone	-0.4347826086956522	N	N	True	False
+DB06678	DB00540	Esmirtazapine	Nortriptyline	-0.4376750700280112		N	True	False
+DB00420	DB00715	Promazine	Paroxetine	-0.4444444444444444	N	N	True	False
+DB00420	DB00734	Promazine	Risperidone	-0.4444444444444444	N	N	True	False
+DB01175	DB00477	Escitalopram	Chlorpromazine	-0.4464285714285714	N	N	True	False
+DB01175	DB06678	Escitalopram	Esmirtazapine	-0.4523809523809522	N		True	False
+DB01175	DB01239	Escitalopram	Chlorprothixene	-0.4545454545454546	N	N	True	False
+DB00420	DB01151	Promazine	Desipramine	-0.46419437340153447	N	N	True	False
+DB00477	DB00715	Chlorpromazine	Paroxetine	-0.4653679653679653	N	N	True	False
+DB00420	DB06153	Promazine	Pizotifen	-0.47619047619047616	N	N	True	False
+DB01239	DB00477	Chlorprothixene	Chlorpromazine	-0.4776785714285714	N	N	True	False
+DB00715	DB06153	Paroxetine	Pizotifen	-0.4814814814814815	N	N	True	False
+DB06678	DB06153	Esmirtazapine	Pizotifen	-0.4999999999999999		N	True	False
+DB06698	DB04946	Betahistine	Iloperidone	-0.5	N	N	True	False
+DB00715	DB00734	Paroxetine	Risperidone	-0.5	N	N	True	False
+DB00477	DB00540	Chlorpromazine	Nortriptyline	-0.5071428571428572	N	N	True	False
+DB00734	DB06153	Risperidone	Pizotifen	-0.5185185185185186	N	N	True	False
+DB01239	DB00715	Chlorprothixene	Paroxetine	-0.5217391304347826	N	N	True	False
+DB01175	DB00734	Escitalopram	Risperidone	-0.5217391304347826	N	N	True	False
+DB00715	DB04946	Paroxetine	Iloperidone	-0.5217391304347826	N	N	True	False
+DB00477	DB00734	Chlorpromazine	Risperidone	-0.525974025974026	N	N	True	False
+DB00656	DB00734	Trazodone	Risperidone	-0.5263157894736843	N	N	True	False
+DB00420	DB00540	Promazine	Nortriptyline	-0.5357142857142856	N	N	True	False
+DB00734	DB00540	Risperidone	Nortriptyline	-0.5357142857142856	N	N	True	False
+DB01175	DB06153	Escitalopram	Pizotifen	-0.5384615384615384	N	N	True	False
+DB00656	DB06153	Trazodone	Pizotifen	-0.5454545454545454	N	N	True	False
+DB01239	DB04946	Chlorprothixene	Iloperidone	-0.5454545454545454	N	N	True	False
+DB02116	DB06195	Olomoucine	Seliciclib	-0.5454545454545454			False	False
+DB06153	DB01151	Pizotifen	Desipramine	-0.5606617647058822	N	N	True	False
+DB00656	DB01151	Trazodone	Desipramine	-0.571078431372549	N	N	True	False
+DB06698	DB00734	Betahistine	Risperidone	-0.5714285714285714	N	N	True	False
+DB00477	DB01151	Chlorpromazine	Desipramine	-0.5745245466607697	N	N	True	False
+DB00477	DB04946	Chlorpromazine	Iloperidone	-0.6026785714285714	N	N	True	False
+DB00420	DB06678	Promazine	Esmirtazapine	-0.6111111111111109	N		True	False
+DB00656	DB06698	Trazodone	Betahistine	-0.6111111111111112	N	N	True	False
+DB00656	DB00420	Trazodone	Promazine	-0.6153846153846154	N	N	True	False
+DB06698	DB06153	Betahistine	Pizotifen	-0.6176470588235294	N	N	True	False
+DB06153	DB00540	Pizotifen	Nortriptyline	-0.6219211822660098	N	N	True	False
+DB00656	DB00715	Trazodone	Paroxetine	-0.631578947368421	N	N	True	False
+DB01239	DB01151	Chlorprothixene	Desipramine	-0.6365546218487395	N	N	True	False
+DB01239	DB00835	Chlorprothixene	Brompheniramine	-0.6470588235294117	N	R	True	False
+DB01239	DB06698	Chlorprothixene	Betahistine	-0.6538461538461539	N	N	True	False
+DB00656	DB00540	Trazodone	Nortriptyline	-0.6547619047619047	N	N	True	False
+DB00715	DB01151	Paroxetine	Desipramine	-0.6845841784989857	N	N	True	False
+DB00734	DB04946	Risperidone	Iloperidone	-0.6956521739130435	N	N	True	False
+DB00420	DB01175	Promazine	Escitalopram	-0.7058823529411764	N	N	True	False
+DB01175	DB01151	Escitalopram	Desipramine	-0.7079831932773109	N	N	True	False
+DB01151	DB00540	Desipramine	Nortriptyline	-0.7425454052588778	N	N	True	False
+DB00420	DB06698	Promazine	Betahistine	-0.75	N	N	True	False
+DB01106	DB06698	Levocabastine	Betahistine	-0.75	S, R	N	True	False
+DB06698	DB00835	Betahistine	Brompheniramine	-0.75	N	R	True	False
+DB00715	DB00540	Paroxetine	Nortriptyline	-0.7664835164835164	N	N	True	False
+DB00656	DB06678	Trazodone	Esmirtazapine	-0.7666666666666665	N		True	False
+DB00656	DB01175	Trazodone	Escitalopram	-0.7777777777777778	N	N	True	False
+DB01175	DB00715	Escitalopram	Paroxetine	-0.782608695652174	N	N	True	False
+DB01175	DB00540	Escitalopram	Nortriptyline	-0.7957142857142856	N	N	True	False
+DB08877	DB08895	Ruxolitinib	Tofacitinib	-1.0	L	L	True	False
+DB01268	DB06080	Sunitinib	Linifanib	-1.0029761904761907	L		False	False
+DB06678	DB06698	Esmirtazapine	Betahistine	-1.0666666666666664		N	True	False

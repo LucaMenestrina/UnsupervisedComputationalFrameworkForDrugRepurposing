@@ -10,7 +10,7 @@ It contains the Python 3 implementation of the pipeline, as well as the results 
 &nbsp;
 
 <p align="center">
-  <img src="https://github.com/LucaMenestrina/UnsupervisedComputationalFrameworkForDrugRepurposing/master/graphical_abstract.svg" alt="Graphical Abstract - Pipeline" width="90%"/>
+  <img src="https://raw.githubusercontent.com/LucaMenestrina/UnsupervisedComputationalFrameworkForDrugRepurposing/master/graphical_abstract.svg" alt="Graphical Abstract - Pipeline" width="90%"/>
 </p>
 
 
@@ -51,7 +51,7 @@ optional arguments:
   -cl, --cell_lines CELL_LINES [CELL_LINES ...]     Base Disease-Related Cell Lines in LINCS Database (separated by a space)
 ```
 Specify only one of 'genes' and 'genes_file'
-If no Disease Name is provided the analysis will be performed for Huntington's Disease and Multiple Sclerosis as in the paper
+If no Disease Name is provided the analysis will be performed for Huntington's disease and multiple sclerosis as in the paper
 
 **TO NOTICE:**  
 Some Sources (DrugBank, DisGeNET, OMIM) _require identification_ for downloading their files.  
@@ -75,4 +75,4 @@ Set the environmental variables: ```DRUGBANK_EMAIL```, ```DRUGBANK_PASSWORD```, 
 - [SignaLink](http://signalink.org/)
 - [STRING](https://string-db.org/)
 
-Additional info reported in [sources.json](https://github.com/LucaMenestrina/UnsupervisedComputationalFrameworkForDrugRepurposing/master/data/sources/sources.json)
+Additional info reported in [sources.json](https://github.com/LucaMenestrina/UnsupervisedComputationalFrameworkForDrugRepurposing/blob/master/data/sources/sources.json)

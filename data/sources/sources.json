@@ -1,0 +1,214 @@
+{
+    "NCBI": {
+        "files": {
+            "Homo_sapiens.gene_info.gz": {
+                "URL": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/Mammalia/Homo_sapiens.gene_info.gz",
+                "version": "2022-04-14    (accessed: 2022-04-14, 15:45:54 UTC)"
+            }
+        },
+        "license": "Public Domain",
+        "license_url": "https://www.ncbi.nlm.nih.gov/home/about/policies/#copyright",
+        "registration_required": false
+    },
+    "OMIM": {
+        "files": {},
+        "license": "Restricted Availability",
+        "license_url": "https://www.omim.org/help/copyright",
+        "registration_required": true
+    },
+    "DisGeNET": {
+        "files": {
+            "disease_mappings.tsv.gz": {
+                "URL": "https://www.disgenet.org/static/disgenet_ap1/files/downloads/disease_mappings.tsv.gz",
+                "version": "2020-05-15    (accessed: 2022-04-14, 15:46:05 UTC)"
+            },
+            "curated_gene_disease_associations.tsv.gz": {
+                "URL": "https://www.disgenet.org/static/disgenet_ap1/files/downloads/curated_gene_disease_associations.tsv.gz",
+                "version": "2020-05-07    (accessed: 2022-04-14, 15:46:06 UTC)"
+            }
+        },
+        "license": "CC BY-NC-SA 4.0",
+        "license_url": "https://www.disgenet.org/legal",
+        "registration_required": true
+    },
+    "GO": {
+        "files": {
+            "goa_human.gaf.gz": {
+                "URL": "http://geneontology.org/gene-associations/goa_human.gaf.gz",
+                "version": "accessed: 2022-04-14, 15:49:03 UTC"
+            },
+            "go-basic.obo": {
+                "URL": "http://geneontology.org/ontology/go-basic.obo",
+                "version": "accessed: 2022-04-14, 15:49:43 UTC"
+            }
+        },
+        "license": "CC BY 4.0",
+        "license_url": "http://geneontology.org/docs/go-citation-policy/#license",
+        "registration_required": false
+    },
+    "HPO": {
+        "files": {
+            "hp.obo": {
+                "URL": "http://purl.obolibrary.org/obo/hp.obo",
+                "version": "accessed: 2022-04-14, 15:50:32 UTC"
+            },
+            "genes_to_phenotype.txt": {
+                "URL": "http://purl.obolibrary.org/obo/hp/hpoa/genes_to_phenotype.txt",
+                "version": "accessed: 2022-04-14, 15:50:34 UTC"
+            }
+        },
+        "license": null,
+        "license_url": "https://hpo.jax.org/app/license",
+        "registration_required": false
+    },
+    "APID": {
+        "files": {
+            "9606_Q1.txt": {
+                "URL": "http://cicblade.dep.usal.es:8080/APID/InteractionsTABplain.action",
+                "version": "accessed: 2022-04-14, 15:50:52 UTC"
+            }
+        },
+        "license": "CC-BY-NC",
+        "license_url": "http://cicblade.dep.usal.es:8080/APID/init.action#subtab4",
+        "registration_required": false
+    },
+    "BioGRID": {
+        "files": {
+            "BIOGRID-ORGANISM-4.4.208.tab.zip": {
+                "URL": "https://downloads.thebiogrid.org/Download/BioGRID/Release-Archive/BIOGRID-4.4.208/BIOGRID-ORGANISM-4.4.208.tab.zip",
+                "version": "4.4.208    (accessed: 2022-04-14, 15:51:30 UTC)"
+            }
+        },
+        "license": "MIT",
+        "license_url": "https://downloads.thebiogrid.org/BioGRID",
+        "registration_required": false
+    },
+    "HuRI": {
+        "files": {
+            "HuRI.tsv": {
+                "URL": "http://www.interactome-atlas.org/data/HuRI.tsv",
+                "version": "2020-03-09    (accessed: 2022-04-14, 15:54:27 UTC)"
+            }
+        },
+        "license": "CC BY 4.0",
+        "license_url": "http://www.interactome-atlas.org/download",
+        "registration_required": false
+    },
+    "InnateDB": {
+        "files": {
+            "all.mitab.gz": {
+                "URL": "https://www.innatedb.com/download/interactions/all.mitab.gz",
+                "version": "2022-01-29    (accessed: 2022-04-14, 15:54:41 UTC)"
+            }
+        },
+        "license": "DESIGN SCIENCE LICENSE",
+        "license_url": "https://www.innatedb.com/license.jsp",
+        "registration_required": false
+    },
+    "INstruct": {
+        "files": {
+            "sapiens.sin": {
+                "URL": "http://instruct.yulab.org/download/sapiens.sin",
+                "version": "2020-08-13    (accessed: 2022-04-14, 15:55:30 UTC)"
+            }
+        },
+        "license": "All rights reserved (Authorization obtained by e-mail contact with Haiyuan Yu <haiyuan.yu@cornell.edu>)",
+        "license_url": "http://instruct.yulab.org/about.html",
+        "registration_required": false
+    },
+    "IntAct": {
+        "files": {
+            "intact.zip": {
+                "URL": "http://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip",
+                "version": "2022-02-05    (accessed: 2022-04-14, 15:59:40 UTC)"
+            }
+        },
+        "license": "CC-BY 4.0",
+        "license_url": "https://www.ebi.ac.uk/intact/resources/overview",
+        "registration_required": false
+    },
+    "SignaLink": {
+        "files": {
+            "slk3db_dump_json.tgz": {
+                "URL": "http://signalink.org/slk3db_dump_json.tgz",
+                "version": "2022-03-11    (accessed: 2022-04-14, 16:02:26 UTC)"
+            }
+        },
+        "license": "CC BY-NC-SA 3.0",
+        "license_url": "http://signalink.org/faq",
+        "registration_required": false
+    },
+    "STRING": {
+        "files": {
+            "human.name_2_string.tsv.gz": {
+                "URL": "https://string-db.org/mapping_files/STRING_display_names/human.name_2_string.tsv.gz",
+                "version": "2019-01-27    (accessed: 2022-04-14, 16:03:45 UTC)"
+            },
+            "9606.protein.links.v11.0.txt.gz": {
+                "URL": "https://stringdb-static.org/download/protein.links.v11.0/9606.protein.links.v11.0.txt.gz",
+                "version": "2018-12-20    (accessed: 2022-04-14, 16:03:50 UTC)"
+            }
+        },
+        "license": "CC BY 4.0",
+        "license_url": "https://string-db.org/cgi/access?footer_active_subpage=licensing",
+        "registration_required": false
+    },
+    "DrugBank": {
+        "files": {
+            "all-full-database": {
+                "URL": "https://go.drugbank.com/releases/5-1-9/downloads/all-full-database",
+                "version": "5.1.9    (accessed: 2022-04-14, 16:12:54 UTC)"
+            }
+        },
+        "license": "CC BY-NC 4.0",
+        "license_url": "https://go.drugbank.com/releases/latest#full",
+        "registration_required": true
+    },
+    "LINCS": {
+        "files": {
+            "GSE70138_Broad_LINCS_cell_info_2017-04-28.txt.gz": {
+                "URL": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE70nnn/GSE70138/suppl/GSE70138%5FBroad%5FLINCS%5Fcell%5Finfo%5F2017%2D04%2D28%2Etxt%2Egz",
+                "version": "2017-04-28    (accessed: 2022-04-15, 10:56:10 UTC)"
+            },
+            "GSE70138_Broad_LINCS_gene_info_2017-03-06.txt.gz": {
+                "URL": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE70nnn/GSE70138/suppl/GSE70138%5FBroad%5FLINCS%5Fgene%5Finfo%5F2017%2D03%2D06%2Etxt%2Egz",
+                "version": "2017-03-07    (accessed: 2022-04-15, 10:56:12 UTC)"
+            },
+            "GSE70138_Broad_LINCS_pert_info_2017-03-06.txt.gz": {
+                "URL": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE70nnn/GSE70138/suppl/GSE70138%5FBroad%5FLINCS%5Fpert%5Finfo%5F2017%2D03%2D06%2Etxt%2Egz",
+                "version": "2017-03-27    (accessed: 2022-04-15, 10:56:14 UTC)"
+            },
+            "GSE70138_Broad_LINCS_sig_info_2017-03-06.txt.gz": {
+                "URL": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE70nnn/GSE70138/suppl/GSE70138%5FBroad%5FLINCS%5Fsig%5Finfo%5F2017%2D03%2D06%2Etxt%2Egz",
+                "version": "2017-06-28    (accessed: 2022-04-15, 10:56:16 UTC)"
+            },
+            "GSE92742_Broad_LINCS_cell_info.txt.gz": {
+                "URL": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/GSE92742%5FBroad%5FLINCS%5Fcell%5Finfo%2Etxt%2Egz",
+                "version": "2017-05-02    (accessed: 2022-04-15, 10:56:19 UTC)"
+            },
+            "GSE92742_Broad_LINCS_gene_info.txt.gz": {
+                "URL": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/GSE92742%5FBroad%5FLINCS%5Fgene%5Finfo%2Etxt%2Egz",
+                "version": "2017-03-03    (accessed: 2022-04-15, 10:56:21 UTC)"
+            },
+            "GSE92742_Broad_LINCS_pert_info.txt.gz": {
+                "URL": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/GSE92742%5FBroad%5FLINCS%5Fpert%5Finfo%2Etxt%2Egz",
+                "version": "2017-03-03    (accessed: 2022-04-15, 10:56:23 UTC)"
+            },
+            "GSE92742_Broad_LINCS_sig_info.txt.gz": {
+                "URL": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/GSE92742%5FBroad%5FLINCS%5Fsig%5Finfo%2Etxt%2Egz",
+                "version": "2017-05-03    (accessed: 2022-04-15, 10:56:28 UTC)"
+            },
+            "GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx.gz": {
+                "URL": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE70nnn/GSE70138/suppl/GSE70138%5FBroad%5FLINCS%5FLevel5%5FCOMPZ%5Fn118050x12328%5F2017%2D03%2D06%2Egctx%2Egz",
+                "version": "2017-03-07    (accessed: 2022-04-15, 11:01:18 UTC)"
+            },
+            "GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx.gz": {
+                "URL": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/GSE92742%5FBroad%5FLINCS%5FLevel5%5FCOMPZ%2EMODZ%5Fn473647x12328%2Egctx%2Egz",
+                "version": "2017-12-13    (accessed: 2022-04-15, 11:18:42 UTC)"
+            }
+        },
+        "license": "Freely Available",
+        "license_url": "https://clue.io/connectopedia/publishing_with_geo_data, https://clue.io/connectopedia/data_redistribution, https://clue.io/connectopedia/clue_access_for_profits, https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html",
+        "registration_required": false
+    }
+}

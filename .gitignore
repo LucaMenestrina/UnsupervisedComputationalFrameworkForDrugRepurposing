@@ -1,0 +1,12 @@
+*__pycache__/*
+tmp*
+
+# ignore everything in sources except for sources.json
+data/sources/*
+!sources.json
+!data/sources/Alzheimer
+!data/sources/Huntington
+!data/sources/MultipleSclerosis
+
+# ignore environmental variables saved in .env (passwords and usernames...)
+.env
