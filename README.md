@@ -1,9 +1,9 @@
 <h1 align="center">
-Unsupervised Computational Framework for Drug Repurposing
+An Unsupervised Computational Pipeline Identifies Potential Repurposable Drugs to Treat Huntington’s Disease and Multiple Sclerosis
 </h1>
 
 <!--
-This is the official repository for the paper [L. Menestrina, M. Recanatini, Unsupervised Computational Framework for Drug Repurposing: Application to two Neurological Disorders](url)  
+This is the official repository for the paper [L. Menestrina, M. Recanatini, An Unsupervised Computational Pipeline Identifies Potential Repurposable Drugs to Treat Huntington’s Disease and Multiple Sclerosis](url)  
 [doi](doi)  
 It contains the Python 3 implementation of the pipeline, as well as the results of its application on Huntington's disease and multiple sclerosis    
 -->
@@ -53,7 +53,7 @@ optional arguments:
 Specify only one of 'genes' and 'genes_file'
 If no Disease Name is provided the analysis will be performed for Huntington's disease and multiple sclerosis as in the paper
 
-**TO NOTICE:**  
+**CAVEAT:**  
 Some Sources (DrugBank, DisGeNET, OMIM) _require identification_ for downloading their files.  
 Set the environmental variables: ```DRUGBANK_EMAIL```, ```DRUGBANK_PASSWORD```, ```DISGENET_EMAIL```, ```DISGENET_PASSWORD```, and ```OMIM_APIKEY``` or save them in a hidden file ```.env``` in the main directory of your project.
 

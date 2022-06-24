@@ -4,6 +4,7 @@ import networkx as nx
 from itertools import combinations, combinations_with_replacement
 from collections import namedtuple
 from utils import profile, tqdm4ray
+import re
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 import seaborn as sns
@@ -47,9 +48,9 @@ def all_shortest_paths_lengths(interactome, drug_targets, n_batches=None):
     log = logging.getLogger("drug_combinations:all_shortest_paths_lengths")
 
     nodes = set(interactome.nodes())
-    drug_targets = (
-        set(drug_targets) & nodes
-    )  # keeps only drug-targets that are in the interactome
+    drug_targets = set(
+        drug_targets
+    )  # & nodes would keep only drug-targets that are in the interactome
 
     import ray
 
@@ -59,7 +60,8 @@ def all_shortest_paths_lengths(interactome, drug_targets, n_batches=None):
             shortest_path_length(
                 source, target, nx.shortest_path_length(network, source, target)
             )
-            if nx.has_path(network, source, target)
+            if (source in nodes and target in nodes)
+            and nx.has_path(network, source, target)
             else shortest_path_length(source, target, np.inf)
             for source, target in batch
         )
@@ -173,12 +175,12 @@ def get_separation(A, B, shortest_paths_lengths):
     A_targets = {
         target.symbol
         for target in drugbank.get(A).targets
-        if target.type == "protein" and target.symbol
+        if target.type == "protein" and target.organism == "Humans" and target.symbol
     }
     B_targets = {
         target.symbol
         for target in drugbank.get(B).targets
-        if target.type == "protein" and target.symbol
+        if target.type == "protein" and target.organism == "Humans" and target.symbol
     }
     separation = between_distance(
         A_targets, B_targets, shortest_paths_lengths
@@ -285,8 +287,22 @@ def draw_heatmap(disease_name, drugs, shortest_paths_length):
         [
             [
                 "\u00D7"  # "X"
-                if B in {d.drugbank_id for d in drugbank.get(A).drug_interactions}
-                or A in {d.drugbank_id for d in drugbank.get(B).drug_interactions}
+                if B
+                in {
+                    d.drugbank_id
+                    for d in drugbank.get(A).drug_interactions
+                    if bool(
+                        re.search("The risk o[a-z,A-Z,\ ]+increased", d.description)
+                    )
+                }
+                or A
+                in {
+                    d.drugbank_id
+                    for d in drugbank.get(B).drug_interactions
+                    if bool(
+                        re.search("The risk o[a-z,A-Z,\ ]+increased", d.description)
+                    )
+                }
                 else ""
                 for B in data_reordered.index
             ]
@@ -513,8 +529,22 @@ def study_drug_combinations(disease_name):
                     get_separation(A, B, shortest_paths_lengths),
                     ", ".join({code.level1.code for code in drugbank.get(A).atc_codes}),
                     ", ".join({code.level1.code for code in drugbank.get(B).atc_codes}),
-                    B in {d.drugbank_id for d in drugbank.get(A).drug_interactions}
-                    or A in {d.drugbank_id for d in drugbank.get(B).drug_interactions},
+                    B
+                    in {
+                        d.drugbank_id
+                        for d in drugbank.get(A).drug_interactions
+                        if bool(
+                            re.search("The risk o[a-z,A-Z,\ ]+increased", d.description)
+                        )
+                    }
+                    or A
+                    in {
+                        d.drugbank_id
+                        for d in drugbank.get(B).drug_interactions
+                        if bool(
+                            re.search("The risk o[a-z,A-Z,\ ]+increased", d.description)
+                        )
+                    },
                     B
                     in {
                         drugbank.get(ingredient).id

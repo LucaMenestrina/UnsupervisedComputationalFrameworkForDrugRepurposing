@@ -27,7 +27,7 @@ hsa_gene_ids = get_human_gene_ids()
 from databases import NCBI, GO
 
 ncbi = NCBI()
-go = GO()
+go = GO(basic=True)
 
 
 def get_gene2go(filepath="data/sources/GO/goa_human.gaf.gz"):

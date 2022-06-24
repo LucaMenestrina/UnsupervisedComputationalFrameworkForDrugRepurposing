@@ -49,11 +49,11 @@ class NCBI(Database, metaclass=Singleton):
             subset="Symbol_from_nomenclature_authority", keep=False, ignore_index=True,
         )  # keep only unique official symbols
         # NCBI official symbols
-        self.__ncbi_symbols = tuple(
+        self.__ncbi_symbols = set(
             self.__geneinfo()["Symbol_from_nomenclature_authority"]
         )
         # NCBI official ids
-        self.__ncbi_ids = tuple(self.__geneinfo()["GeneID"].astype({"GeneID": int}))
+        self.__ncbi_ids = set(self.__geneinfo()["GeneID"].astype({"GeneID": int}))
 
         # NCBI unique synonyms (not ambiguous)
         self.__unique_synonyms = {}
@@ -184,7 +184,7 @@ class NCBI(Database, metaclass=Singleton):
             return symbol
         elif symbol in self.__unique_synonyms:
             return self.__unique_synonyms[symbol]
-        else:
+        elif aliases:
             for alias in aliases:
                 if alias in self.__ncbi_symbols:
                     return alias
@@ -434,7 +434,7 @@ class GO(Database, metaclass=Singleton):
     and cellular components
     """
 
-    def __init__(self, update=None):
+    def __init__(self, basic=False, update=None):
         Database.__init__(
             self,
             update=update,
@@ -548,10 +548,16 @@ class GO(Database, metaclass=Singleton):
                     outfile.write(line)
             return filepath
 
-        self.__db = self._add_file(
-            url="http://geneontology.org/ontology/go-basic.obo",
-            fix_function=fix_go_obofile,
-        )
+        if basic:
+            self.__db = self._add_file(
+                url="http://geneontology.org/ontology/go-basic.obo",
+                fix_function=fix_go_obofile,
+            )
+        else:
+            self.__db = self._add_file(
+                url="http://geneontology.org/ontology/go.obo",
+                fix_function=fix_go_obofile,
+            )
         self.__go2name = set()
         self.__goRelationship = set()
         self.__go2namespace = set()
@@ -696,27 +702,29 @@ class GO(Database, metaclass=Singleton):
                 }
             )
         )
-        self.__ontology = self.__ontology.append(gene2go).drop_duplicates(
+        self.__ontology = pd.concat([self.__ontology, gene2go]).drop_duplicates(
             ignore_index=True
         )
 
         # for every namespace set a property to retrieve ids and names
         namespaces = {t[1] for t in self.__go2namespace}
         for namespace in namespaces:
-            value = (
-                self.__ontology[self.__ontology["subjectType"] == namespace][
-                    ["subject", "subjectName"]
-                ]
-                .rename(
-                    columns={"subject": namespace, "subjectName": f"{namespace}Name"}
-                )
-                .append(
+            value = pd.concat(
+                [
+                    self.__ontology[self.__ontology["subjectType"] == namespace][
+                        ["subject", "subjectName"]
+                    ].rename(
+                        columns={
+                            "subject": namespace,
+                            "subjectName": f"{namespace}Name",
+                        }
+                    ),
                     self.__ontology[self.__ontology["objectType"] == namespace][
                         ["object", "objectName"]
                     ].rename(
                         columns={"object": namespace, "objectName": f"{namespace}Name"}
-                    )
-                )
+                    ),
+                ]
             )
             setattr(
                 self.__class__,
@@ -1539,6 +1547,22 @@ class DrugBank(Database, metaclass=Singleton):
         """
             Returns a namedtuple with relevant data about the requested drug
 
+            Accepts DrugBank IDs or drug names (returns only the exact matches)
+        """
+        if not isinstance(query, str):
+            return None
+        else:
+            if query.startswith("DB"):
+                return getattr(self.__db(), query)
+            elif query in self.__drugNames:
+                return getattr(self.__db(), self.__name2id[query])
+            else:
+                return None
+
+    def search(self, query):
+        """
+            Returns a namedtuple with relevant data about the requested drug
+
             Accepts DrugBank IDs or drug names (returns the best match, if relevant)
         """
         if not isinstance(query, str):
@@ -1552,11 +1576,11 @@ class DrugBank(Database, metaclass=Singleton):
                 best_match = get_best_match(query, self.__drugNames)
                 return getattr(self.__db(), self.__name2id[best_match])
 
-    def get_drug(self, query):
+    def search_drug(self, query):
         """
-            Alias for get
+            Alias for search
         """
-        return self.get(query)
+        return self.search(query)
 
     def get_current_release_url(self):
         if not self.update:

@@ -540,6 +540,7 @@ class File:
         ):
             db = self.__content.copy()
             db.insert(len(self.__content.columns), "source", self.__folder)
+            db["source"] = db["source"].astype("category")
             return db
         else:
             try:
@@ -635,6 +636,7 @@ class Database:
         data_to_send=None,
         comment=None,
         index_col=None,
+        sequential_identifier=None,
     ):
         if self.__update != None:
             update = self.__update
@@ -660,7 +662,9 @@ class Database:
             session=session,
             post=post,
             data_to_send=data_to_send,
-            sequential_identifier=len(self.__files),
+            sequential_identifier=sequential_identifier
+            if sequential_identifier != None
+            else len(self.__files),
             comment=comment,
             index_col=index_col,
         )

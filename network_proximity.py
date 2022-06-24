@@ -325,7 +325,10 @@ def get_proximities(
     log.debug(f"Mean:{mean}, Standard Deviation: {std}")
 
     proximities = namedtuple(
-        typename="proximities", field_names=drugbank_drug_targets.keys()
+        typename="proximities",
+        field_names=(
+            distance.drug for distance in distances if distance.distance != np.inf
+        ),  # drugbank_drug_targets.keys()
     )
 
     drug_proximities = proximities(
@@ -334,13 +337,22 @@ def get_proximities(
                 distance.distance, ((distance.distance - mean) / std)
             )
             for distance in distances
+            if distance.distance != np.inf
         }
     )
 
     # Determine Distance Threshold
     bandwidth = np.mean(
         (
-            bw_silverman(np.array([distance.distance for distance in distances])),
+            bw_silverman(
+                np.array(
+                    [
+                        distance.distance
+                        for distance in distances
+                        if distance.distance != np.inf
+                    ]
+                )
+            ),
             bw_silverman(reference_distribution),
         )
     )
@@ -348,13 +360,29 @@ def get_proximities(
     grid = np.linspace(
         np.min(
             (
-                np.min(np.array([distance.distance for distance in distances])),
+                np.min(
+                    np.array(
+                        [
+                            distance.distance
+                            for distance in distances
+                            if distance.distance != np.inf
+                        ]
+                    )
+                ),
                 np.min(reference_distribution),
             )
         ),
         np.max(
             (
-                np.max(np.array([distance.distance for distance in distances])),
+                np.max(
+                    np.array(
+                        [
+                            distance.distance
+                            for distance in distances
+                            if distance.distance != np.inf
+                        ]
+                    )
+                ),
                 np.max(reference_distribution),
             )
         ),
@@ -362,7 +390,15 @@ def get_proximities(
     )
     distances_kde = np.exp(
         KernelDensity(bandwidth=bandwidth, kernel="gaussian", rtol=1 / grid_size)
-        .fit(np.array([distance.distance for distance in distances])[:, np.newaxis])
+        .fit(
+            np.array(
+                [
+                    distance.distance
+                    for distance in distances
+                    if distance.distance != np.inf
+                ]
+            )[:, np.newaxis]
+        )
         .score_samples(grid[:, np.newaxis])
     )
     reference_kde = np.exp(

@@ -82,16 +82,16 @@ class PPI(metaclass=Singleton):
                 },
             )
 
-        self.__proteins = (
-            self.__interactome[["subject", "subjectName"]]
-            .rename(columns={"subject": "proteinSymbol", "subjectName": "proteinName"})
-            .append(
+        self.__proteins = pd.concat(
+            [
+                self.__interactome[["subject", "subjectName"]].rename(
+                    columns={"subject": "proteinSymbol", "subjectName": "proteinName"}
+                ),
                 self.__interactome[["object", "objectName"]].rename(
                     columns={"object": "proteinSymbol", "objectName": "proteinName"}
-                )
-            )
-            .drop_duplicates(ignore_index=True)
-        )
+                ),
+            ]
+        ).drop_duplicates(ignore_index=True)
 
         log.info(f"{self.__class__.__name__} ready!")
 
