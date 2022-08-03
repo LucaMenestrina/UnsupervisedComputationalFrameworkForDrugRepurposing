@@ -2,11 +2,11 @@
 An Unsupervised Computational Pipeline Identifies Potential Repurposable Drugs to Treat Huntington’s Disease and Multiple Sclerosis
 </h1>
 
-<!--
-This is the official repository for the paper [L. Menestrina, M. Recanatini, An Unsupervised Computational Pipeline Identifies Potential Repurposable Drugs to Treat Huntington’s Disease and Multiple Sclerosis](url)  
-[doi](doi)  
+
+This is the official repository for the paper "[An Unsupervised Computational Pipeline Identifies Potential Repurposable Drugs to Treat Huntington’s Disease and Multiple Sclerosis](https://www.sciencedirect.com/science/article/pii/S2667318522000125)"  
+doi: [10.1016/j.ailsci.2022.100042](https://doi.org/10.1016/j.ailsci.2022.100042)  
 It contains the Python 3 implementation of the pipeline, as well as the results of its application on Huntington's disease and multiple sclerosis    
--->
+
 &nbsp;
 
 <p align="center">
@@ -20,11 +20,23 @@ Drug repurposing consists in identifying additional uses for known drugs and, si
 
 **Keywords:** Computational drug discovery, Drug repurposing, Network pharmacology, Network analysis, Huntington’s disease, Multiple sclerosis  
 
-<!--
-**Bibtex**  
 
-Lorem Ipsum  
--->
+**Bibtex**  
+```
+@article {Menestrina2022,
+         author = {Menestrina, Luca and Recanatini, Maurizio},
+         doi = {10.1016/J.AILSCI.2022.100042},
+         issn = {2667-3185},
+         journal = {Artificial Intelligence in the Life Sciences},
+         pages = {100042},
+         publisher = {Elsevier},
+         title = {{An unsupervised computational pipeline identifies potential repurposable drugs to treat Huntington's disease and multiple sclerosis}},
+         url = {https://linkinghub.elsevier.com/retrieve/pii/S2667318522000125},
+         volume = {2},
+         year = {2022}
+}
+```
+
 
 ### Usage
 
