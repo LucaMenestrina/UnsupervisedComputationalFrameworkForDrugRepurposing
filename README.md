@@ -53,7 +53,7 @@ pip install -r requirements.txt
 **Perform Analysis**
 
 ```
-python3 run.py [-h] [-d DISEASE] [-g GENES [GENES ...]] [-gf GENES_FILE]
+python3 run.py [-h] [-d DISEASE] [-g GENES [GENES ...]] [-gf GENES_FILE] [-cl CELL_LINES [CELL_LINES ...]]
 
 optional arguments:
   -h,  --help                                       show this help message and exit

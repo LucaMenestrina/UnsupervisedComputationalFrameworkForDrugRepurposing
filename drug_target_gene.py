@@ -38,7 +38,8 @@ def get_drugs(disease_name, significance_threshold=0.25):
     ) as infile:
         infile.readline()
         distance_threshold = float(
-            re.findall("\# Threshold: ([0-9]\.[0-9]{1,2})", infile.readline())[0]
+            re.findall(
+                "\# Threshold: ([0-9]\.[0-9]{1,2})", infile.readline())[0]
         )
     proximal_igsea_results = igsea_results[
         igsea_results["DrugBank_ID"].isin(
@@ -97,10 +98,12 @@ def draw_drug_target_gene_network(disease_name, disease_genes):
     ppi = pd.read_csv(
         "data/sources/interactome_slim.tsv.gz", sep="\t", compression="gzip"
     )
-    interactome = nx.from_pandas_edgelist(ppi, source="source", target="target")
+    interactome = nx.from_pandas_edgelist(
+        ppi, source="source", target="target")
     interactome = interactome.to_undirected()
 
-    drugs = set(drugs.drop_duplicates(subset=["DrugBank_ID"])["DrugBank_ID"].values)
+    drugs = set(drugs.drop_duplicates(
+        subset=["DrugBank_ID"])["DrugBank_ID"].values)
 
     drug2target = {
         (drug, target) for drug in drugs for target in drugbank_drug_targets[drug]
@@ -196,7 +199,7 @@ def draw_gene_target_drug_sankey(disease_name, disease_genes, height=2000, width
         drugs[["DrugBank_ID", "FDR"]]
         .drop_duplicates(subset=["DrugBank_ID"])
         .set_index("DrugBank_ID")["FDR"]
-        .apply(lambda fdr: fdr if fdr.startswith("<") else "%.5f" % float(fdr))
+        .apply(lambda fdr: fdr if isinstance(fdr, str) and fdr.startswith("<") else "%.5f" % float(fdr))
         .to_dict()
     )
 
@@ -216,10 +219,12 @@ def draw_gene_target_drug_sankey(disease_name, disease_genes, height=2000, width
     ppi = pd.read_csv(
         "data/sources/interactome_slim.tsv.gz", sep="\t", compression="gzip"
     )
-    interactome = nx.from_pandas_edgelist(ppi, source="source", target="target")
+    interactome = nx.from_pandas_edgelist(
+        ppi, source="source", target="target")
     interactome = interactome.to_undirected()
 
-    drugs = set(drugs.drop_duplicates(subset=["DrugBank_ID"])["DrugBank_ID"].values)
+    drugs = set(drugs.drop_duplicates(
+        subset=["DrugBank_ID"])["DrugBank_ID"].values)
     drug2target = {
         (drug, target) for drug in drugs for target in drugbank_drug_targets[drug]
     }
@@ -232,12 +237,14 @@ def draw_gene_target_drug_sankey(disease_name, disease_genes, height=2000, width
         for target in interactome.neighbors(source)
         if target in targets and source != target
     }
-    related_genes = {g for g in related_genes if g in {gt[0] for gt in gene2target}}
+    related_genes = {g for g in related_genes if g in {
+        gt[0] for gt in gene2target}}
     targets = {t for t in targets if t in {gt[1] for gt in gene2target}}
     gene2target.update(
         set(
             zip(
-                related_genes.intersection(targets), related_genes.intersection(targets)
+                related_genes.intersection(
+                    targets), related_genes.intersection(targets)
             )
         )
     )  # self-link genes that are both disease-related-genes and targets
@@ -257,7 +264,8 @@ def draw_gene_target_drug_sankey(disease_name, disease_genes, height=2000, width
         # + [drug2fdr[drug] for drug in drugs]
     )
     related_genes_dict = {node: n for n, node in enumerate(related_genes)}
-    targets_dict = {node: n + len(related_genes) for n, node in enumerate(targets)}
+    targets_dict = {node: n + len(related_genes)
+                    for n, node in enumerate(targets)}
     drugs_dict = {
         node: n + len(related_genes) + len(targets) for n, node in enumerate(drugs)
     }
@@ -442,7 +450,8 @@ def draw_gene_target_drug_sankey(disease_name, disease_genes, height=2000, width
                         if tn < (len(related_genes) + len(targets))
                         else drug_nodes_color[tn]
                         if tn < (len(related_genes) + len(targets) + len(drugs))
-                        else "rgba(0,0,0,0.015)"  # transparent edges between drugs and IGSEA FDR
+                        # transparent edges between drugs and IGSEA FDR
+                        else "rgba(0,0,0,0.015)"
                         for tn in target_nodes
                     ],
                 },
@@ -471,7 +480,8 @@ if __name__ == "__main__":
         ("Huntington", huntington_genes.keys()),
         ("Multiple Sclerosis", multiple_sclerosis_genes.keys()),
     ):
-        log.info(f"Building Drug-Target-RelatedGene Networks for {disease_name}")
+        log.info(
+            f"Building Drug-Target-RelatedGene Networks for {disease_name}")
 
         draw_drug_target_gene_network(disease_name, disease_genes)
         draw_gene_target_drug_sankey(disease_name, disease_genes)

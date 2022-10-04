@@ -33,7 +33,8 @@ A logfile 'run.log' will be saved
 
 import argparse
 import pandas as pd
-import os, sys
+import os
+import sys
 import numpy as np
 import re
 
@@ -42,7 +43,8 @@ import logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[logging.FileHandler("run.log", mode="a"), logging.StreamHandler()],
+    handlers=[logging.FileHandler(
+        "run.log", mode="a"), logging.StreamHandler()],
 )
 logging_name = "run"
 log = logging.getLogger(logging_name)
@@ -61,11 +63,13 @@ class analysis:
         self.__cell_lines = cell_lines
 
         log.info(f"Analyzing {self.__disease_name}\n")
-        log.debug(f"Disease-related genes: {', '.join(self.__disease_genes)}\n")
+        log.debug(
+            f"Disease-related genes: {', '.join(self.__disease_genes)}\n")
         log.debug(f"Cell lines: {', '.join(self.__cell_lines)}\n")
 
         try:
-            os.makedirs(f"data/results/{disease_name.replace(' ', '')}", exist_ok=True)
+            os.makedirs(
+                f"data/results/{disease_name.replace(' ', '')}", exist_ok=True)
             log.info(
                 f"Performing Gene Ontology Enrichment Analysis for {self.__disease_name}"
             )
@@ -103,6 +107,8 @@ class analysis:
             self.__network_proximity_results = get_proximities(
                 self.__disease_name, self.__disease_genes.keys()
             )
+            # self.__network_proximity_results = pd.read_csv(
+            #     f"data/results/{self.__disease_name.replace(' ', '')}/network_proximities.tsv", sep="\t", comment="#")
 
             with open(
                 f"data/results/{self.__disease_name.replace(' ', '')}/network_proximities.tsv"
@@ -126,6 +132,8 @@ class analysis:
                 {str(id) for id in self.__disease_genes.values()},
                 lincs,
             )
+            # self.__igsea_results = pd.read_csv(
+            #     f"data/results/{self.__disease_name.replace(' ', '')}/IGSEA_results.tsv", sep="\t", comment="#")
 
             self.__proximal_igsea_results = self.__igsea_results[
                 self.__igsea_results["DrugBank_ID"].isin(
@@ -158,7 +166,8 @@ class analysis:
             #     sep="\t",
             # )
 
-            log.info(f"Selecting Promising Drug Candidates for {self.__disease_name}")
+            log.info(
+                f"Selecting Promising Drug Candidates for {self.__disease_name}")
 
             self.__promising_drug_candidates = self.__significant_proximal_igsea_results.drop_duplicates(
                 subset=["DrugBank_ID"], ignore_index=True
@@ -208,7 +217,7 @@ class analysis:
                 sep="\t",
             )
 
-            from drug_target_gene_network import (
+            from drug_target_gene import (
                 draw_drug_target_gene_network,
                 draw_gene_target_drug_sankey,
             )
@@ -326,7 +335,8 @@ if __name__ == "__main__":
 
         for disease_name, disease_genes, cell_lines in (
             # ("Alzheimer", alzheimer_genes, ["NEU", "NPC"]),
-            ("Huntington", huntington_genes, ["NEU", "NPC", "SHSY5Y", "SKB", "SKL"]),
+            ("Huntington", huntington_genes, [
+             "NEU", "NPC", "SHSY5Y", "SKB", "SKL"]),
             (
                 "Multiple Sclerosis",
                 multiple_sclerosis_genes,
@@ -369,7 +379,8 @@ if __name__ == "__main__":
 
         if args.genes_file:
             if args.genes:
-                log.error(f"Both 'genes' and 'genes_file' provided, specify only one")
+                log.error(
+                    f"Both 'genes' and 'genes_file' provided, specify only one")
                 sys.exit("Aborting ...\n")
             else:
                 try:
@@ -381,6 +392,11 @@ if __name__ == "__main__":
                     log.info(
                         f"Using {len(disease_genes)} genes found in {args.genes_file}"
                     )
+                except FileNotFoundError:
+                    log.error(
+                        f"Unable to read genes from {args.genes_file}, file not found"
+                    )
+                    sys.exit("Aborting ...\n")
                 except:
                     log.error(
                         f"Unable to read genes from {args.genes_file}, check that they are one per line"
@@ -391,7 +407,8 @@ if __name__ == "__main__":
                 log.info(f"Using {len(args.genes)} disease-related genes")
                 disease_genes = set(args.genes)
             else:
-                log.error(f"None of 'genes' or 'genes_file' provided, specify one")
+                log.error(
+                    f"None of 'genes' or 'genes_file' provided, specify one")
                 sys.exit("Aborting ...\n")
 
         from databases import NCBI
@@ -404,11 +421,13 @@ if __name__ == "__main__":
             if ncbi.get_id_by_symbol(gene) and ncbi.check_symbol(gene)
         }
 
-        log.info(f"{len(disease_genes)} genes kept after mapping to official symbols")
+        log.info(
+            f"{len(disease_genes)} genes kept after mapping to official symbols")
         log.info(
             f"Saving them in data/sources/{disease_name.replace(' ', '')}/{disease_name.lower().replace(' ','_')}_genes.tsv"
         )
-        os.makedirs(f"data/sources/{disease_name.replace(' ', '')}", exist_ok=True)
+        os.makedirs(
+            f"data/sources/{disease_name.replace(' ', '')}", exist_ok=True)
         pd.DataFrame(
             ((symbol, id) for symbol, id in disease_genes.items()),
             columns=["geneSymbol", "geneId"],
@@ -417,3 +436,14 @@ if __name__ == "__main__":
             sep="\t",
         )
         results = analysis(disease_name, disease_genes, args.cell_lines)
+        )
+            os.makedirs(
+        f"data/sources/{disease_name.replace(' ', '')}", exist_ok = True)
+            pd.DataFrame(
+        ((symbol, id) for symbol, id in disease_genes.items()),
+        columns = ["geneSymbol", "geneId"],
+        ).to_csv(
+        f"data/sources/{disease_name.replace(' ', '')}/{disease_name.lower().replace(' ','_')}_genes.tsv",
+        sep = "\t",
+        )
+            results=analysis(disease_name, disease_genes, args.cell_lines)
