@@ -410,6 +410,10 @@ if __name__ == "__main__":
                 log.error(
                     f"None of 'genes' or 'genes_file' provided, specify one")
                 sys.exit("Aborting ...\n")
+        if args.cell_lines is None:
+            log.error(
+                f"No 'cell_lines' provided, specify at least one")
+            sys.exit("Aborting ...\n")
 
         from databases import NCBI
 
