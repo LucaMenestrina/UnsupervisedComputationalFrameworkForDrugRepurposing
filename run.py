@@ -108,7 +108,7 @@ class analysis:
                 self.__disease_name, self.__disease_genes.keys()
             )
             # self.__network_proximity_results = pd.read_csv(
-            #     f"data/results/{self.__disease_name.replace(' ', '')}/network_proximities.tsv", sep="\t", comment="#")
+            #     f"data/results/{self.__disease_name.replace(' ', '')}/network_proximities.tsv", sep="\t", comment="#", index_col=0)
 
             with open(
                 f"data/results/{self.__disease_name.replace(' ', '')}/network_proximities.tsv"
@@ -182,7 +182,7 @@ class analysis:
                     {
                         target.symbol
                         for target in drugbank.get(id).targets
-                        if target.type == "protein" and target.symbol
+                        if target.type == "protein" and target.organism == "Humans" and target.symbol != None
                     }
                 )
             )
@@ -380,7 +380,7 @@ if __name__ == "__main__":
         if args.genes_file:
             if args.genes:
                 log.error(
-                    f"Both 'genes' and 'genes_file' provided, specify only one")
+                    "Both 'genes' and 'genes_file' provided, specify only one")
                 sys.exit("Aborting ...\n")
             else:
                 try:
@@ -408,11 +408,11 @@ if __name__ == "__main__":
                 disease_genes = set(args.genes)
             else:
                 log.error(
-                    f"None of 'genes' or 'genes_file' provided, specify one")
+                    "None of 'genes' or 'genes_file' provided, specify one")
                 sys.exit("Aborting ...\n")
         if args.cell_lines is None:
             log.error(
-                f"No 'cell_lines' provided, specify at least one")
+                "No 'cell_lines' provided, specify at least one")
             sys.exit("Aborting ...\n")
 
         from databases import NCBI
@@ -440,14 +440,3 @@ if __name__ == "__main__":
             sep="\t",
         )
         results = analysis(disease_name, disease_genes, args.cell_lines)
-        )
-            os.makedirs(
-        f"data/sources/{disease_name.replace(' ', '')}", exist_ok = True)
-            pd.DataFrame(
-        ((symbol, id) for symbol, id in disease_genes.items()),
-        columns = ["geneSymbol", "geneId"],
-        ).to_csv(
-        f"data/sources/{disease_name.replace(' ', '')}/{disease_name.lower().replace(' ','_')}_genes.tsv",
-        sep = "\t",
-        )
-            results=analysis(disease_name, disease_genes, args.cell_lines)

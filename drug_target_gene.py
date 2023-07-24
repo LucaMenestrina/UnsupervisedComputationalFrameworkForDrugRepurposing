@@ -55,7 +55,7 @@ def get_drugs(disease_name, significance_threshold=0.25):
         proximal_igsea_results["FDR"].apply(
             lambda fdr: True
             if isinstance(fdr, str) and "<" in fdr
-            else float(fdr) < 0.25
+            else float(fdr) < significance_threshold
         )
     ]
 
@@ -65,7 +65,7 @@ def get_drugs(disease_name, significance_threshold=0.25):
         ],
         how="left",
         on="DrugBank_ID",
-    ).copy()
+    ).drop_duplicates(subset=["DrugBank_ID"]).copy()
 
 
 def draw_drug_target_gene_network(disease_name, disease_genes):
@@ -459,7 +459,7 @@ def draw_gene_target_drug_sankey(disease_name, disease_genes, height=2000, width
         ]
     )
 
-    sankey.update_layout(font_size=height * 0.8 / len(related_genes))
+    sankey.update_layout(font_size=min(height * 0.8 / len(related_genes, 20)))
     sankey.write_image(
         file=f"data/results/{disease_name.replace(' ', '')}/gene_target_drug_sankey.svg",
         format="svg",
